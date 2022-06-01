@@ -192,3 +192,8 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.65);
   cursor: pointer;
 }
+
+.keyboard__keys *:not(#TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}

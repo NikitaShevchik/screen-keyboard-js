@@ -89,7 +89,11 @@
 #TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R {
     opacity: 0.8;
 }
+
 .keyboard__keys *:not(#TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):hover{
     background: rgba( 0, 0, 0, 0.65);
     cursor: pointer;
+}
+.keyboard__keys *:not(#TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):active {
+    transform: scale(0.95);
 }
