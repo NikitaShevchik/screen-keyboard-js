@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 .keyboard {
-    padding: 150px 0;
+    padding: 10px 0;
     &__content{
 
     }
@@ -27,16 +27,36 @@
         -webkit-backdrop-filter: blur( 8px );
         border-radius: 10px;
 
-
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 1);
         border-radius: 5px;
         padding: 10px 0 0 15px;
         font-size: 35px;
+
+        user-select: none; 
 	}
+}
+.input__text{
+    margin: 40px 0;
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    padding: 0 10px;
+    border: 1px solid #000;
+}
+
+.keyboard__keys._caps{
+    text-transform: capitalize;
+    #CAPS{
+        background: rgba(92, 0, 0, 0.8);
+        &:hover{
+            background: rgba(92, 0, 0, 0.9);
+        }
+    }
 }
 
 #BS{
     grid-column: 14/16;
+    font-size: 30px;
 }
 #TAB{
     grid-column: 1/3;
@@ -56,5 +76,20 @@
 }
 #SPACE{
     grid-column: 4/12;
+    text-align: center;
+    padding: 30px 0 0 0;
 }
 
+/*--
+#yo, #one, #two, #three, #four, #five, #six, #seven, #eigth, #nine, #zero, #def, #plus {
+    color: aquamarine;
+}
+-*/
+
+#TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R {
+    opacity: 0.8;
+}
+.keyboard__keys *:not(#TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):hover{
+    background: rgba( 0, 0, 0, 0.65);
+    cursor: pointer;
+}
