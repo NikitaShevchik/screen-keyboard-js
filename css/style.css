@@ -161,6 +161,14 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(3, 100, 0, 0.9);
 }
 
+.onshift {
+  display: block;
+  position: absolute;
+  opacity: 0.1;
+  top: 20px;
+  right: 25px;
+}
+
 #BS {
   -ms-grid-column: 14;
   -ms-grid-column-span: 2;

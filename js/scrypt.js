@@ -56,35 +56,35 @@ keyboardKeys.forEach(key => key.addEventListener('click', function (e) {
 }));
 function ifShift() {
     if (allKeyboardKeys.classList.contains("_shift")) {
-        one.innerHTML = "!";
-        two.innerHTML = "@";
-        three.innerHTML = "#";
-        four.innerHTML = "$";
-        five.innerHTML = "%";
-        six.innerHTML = ":";
-        seven.innerHTML = "?";
-        eigth.innerHTML = "*";
-        nine.innerHTML = "(";
-        zero.innerHTML = ")";
-        dash.innerHTML = "_";
-        plus.innerHTML = "=";
-        slashOne.innerHTML = "/";
-        slashTwo.innerHTML = ",";
+        one.innerHTML = `!<p class="onshift">1</p>`;
+        two.innerHTML = `@<p class="onshift">2</p>`;
+        three.innerHTML = `#<p class="onshift">3</p>`;
+        four.innerHTML = `$<p class="onshift">4</p>`;
+        five.innerHTML = `%<p class="onshift">5</p>`;
+        six.innerHTML = `:<p class="onshift">6</p>`;
+        seven.innerHTML = `?<p class="onshift">7</p>`;
+        eigth.innerHTML = `*<p class="onshift">8</p>`;
+        nine.innerHTML = `(<p class="onshift">9</p>`;
+        zero.innerHTML = `)<p class="onshift">0</p>`;
+        dash.innerHTML = `_<p class="onshift">-</p>`;
+        plus.innerHTML = `=<p class="onshift">+</p>`;
+        slashOne.innerHTML = `/<p class="onshift">\\</p>`;
+        slashTwo.innerHTML = `,<p class="onshift">.</p>`;
     } else {
-        one.innerHTML = "1";
-        two.innerHTML = "2";
-        three.innerHTML = "3";
-        four.innerHTML = "4";
-        five.innerHTML = "5";
-        six.innerHTML = "6";
-        seven.innerHTML = "7";
-        eigth.innerHTML = "8";
-        nine.innerHTML = "9";
-        zero.innerHTML = "0";
-        dash.innerHTML = "-";
-        plus.innerHTML = "+";
-        slashOne.innerHTML = "\\";
-        slashTwo.innerHTML = ".";
+        one.innerHTML = `1<p class="onshift">!</p>`;
+        two.innerHTML = `2<p class="onshift">@</p>`;
+        three.innerHTML = `3<p class="onshift">#</p>`;
+        four.innerHTML = `4<p class="onshift">$</p>`;
+        five.innerHTML = `5<p class="onshift">%</p>`;
+        six.innerHTML = `6<p class="onshift">:</p>`;
+        seven.innerHTML = `7<p class="onshift">?</p>`;
+        eigth.innerHTML = `8<p class="onshift">*</p>`;
+        nine.innerHTML = `9<p class="onshift">(</p>`;
+        zero.innerHTML = `0<p class="onshift">)</p>`;
+        dash.innerHTML = `-<p class="onshift">_</p>`;
+        plus.innerHTML = `+<p class="onshift">=</p>`;
+        slashOne.innerHTML = `\\<p class="onshift">/</p>`;
+        slashTwo.innerHTML = `.<p class="onshift">,</p>`;
     }
 }
 /*--------INPUT AREA LOGIC---------*/
