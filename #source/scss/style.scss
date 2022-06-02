@@ -6,15 +6,18 @@
 .main {
     font-family: 'Roboto', sans-serif;
 }
+.title{
+    font-size: 15px;
+    padding: 20px 120px 0 120px;
+    text-align: center;
+}
 .conteiner {
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 .keyboard {
     padding: 10px 0;
-    &__content{
-
-    }
 	&__keys {
         display: grid;
         gap: 3px;
@@ -47,9 +50,25 @@
 .keyboard__keys._caps{
     text-transform: capitalize;
     #CAPS{
-        background: rgba(92, 0, 0, 0.8);
+        background: rgba(173, 0, 0, 0.918);
         &:hover{
-            background: rgba(92, 0, 0, 0.9);
+            background: rgba(100, 0, 0, 0.9);
+        }
+    }
+}
+
+.keyboard__keys._shift{
+    text-transform: capitalize;
+    #SHIFT-L{
+        background: rgba(70, 155, 0, 0.918);
+        &:hover{
+            background: rgba(3, 100, 0, 0.9);
+        }
+    }
+    #SHIFT-R{
+        background: rgba(70, 155, 0, 0.918);
+        &:hover{
+            background: rgba(3, 100, 0, 0.9);
         }
     }
 }
@@ -86,14 +105,14 @@
 }
 -*/
 
-#TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R {
-    opacity: 0.8;
+#TAB, #CTRL-L, #ENTER, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R {
+    opacity: 0.7;
 }
 
-.keyboard__keys *:not(#TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):hover{
+.keyboard__keys *:not(#TAB, #CTRL-L, #ENTER, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):hover{
     background: rgba( 0, 0, 0, 0.65);
     cursor: pointer;
 }
-.keyboard__keys *:not(#TAB, #SHIFT-L, #CTRL-L, #ENTER, #SHIFT-R, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):active {
+.keyboard__keys *:not(#TAB, #CTRL-L, #ENTER, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):active {
     transform: scale(0.95);
 }
