@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   padding: 20px 120px 0 120px;
   text-align: center;
+  line-height: 1.4;
 }
 
 .conteiner {
@@ -163,6 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .onshift {
   display: block;
+  font-size: 30px;
   position: absolute;
   opacity: 0.1;
   top: 20px;
@@ -220,7 +222,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 -*/
 #TAB, #CTRL-L, #ENTER, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R {
-  opacity: 0.7;
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.596);
 }
 
 .keyboard__keys *:not(#TAB, #CTRL-L, #ENTER, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):hover {

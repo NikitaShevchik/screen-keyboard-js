@@ -25,8 +25,6 @@ keyboardKeys.forEach(key => key.addEventListener('click', function (e) {
         inputText.focus();
         var textvalue = inputText.value;
         inputText.value = textvalue.slice(0, textvalue.length - 1); // textvalue.substring(0, textvalue.length - 1)
-        allKeyboardKeys.classList.remove("_shift");
-        ifShift();
     } else if (key.id == "SPACE") {
         inputText.focus();
         inputText.value += " ";
@@ -44,16 +42,17 @@ keyboardKeys.forEach(key => key.addEventListener('click', function (e) {
     } else {
         inputText.focus();
         if (allKeyboardKeys.classList.contains("_caps") || allKeyboardKeys.classList.contains("_shift")) {
-            inputText.value += key.innerHTML.toUpperCase();
+            inputText.value += key.textContent[0].toUpperCase();
             allKeyboardKeys.classList.remove("_shift");
-            ifShift()
+            ifShift();
         } else {
-            inputText.value += key.innerHTML;
+            inputText.value += key.textContent[0];
             allKeyboardKeys.classList.remove("_shift");
             ifShift()
         }
-    };
+    }
 }));
+/*--------SHIFT LOGIC---------*/
 function ifShift() {
     if (allKeyboardKeys.classList.contains("_shift")) {
         one.innerHTML = `!<p class="onshift">1</p>`;

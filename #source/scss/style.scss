@@ -10,6 +10,7 @@
     font-size: 15px;
     padding: 20px 120px 0 120px;
     text-align: center;
+    line-height: 1.4;
 }
 .conteiner {
     max-width: 1600px;
@@ -29,12 +30,10 @@
         backdrop-filter: blur( 8px );
         -webkit-backdrop-filter: blur( 8px );
         border-radius: 10px;
-
         color: rgba(255, 255, 255, 1);
         border-radius: 5px;
         padding: 10px 0 0 15px;
         font-size: 35px;
-
         user-select: none; 
 	}
 }
@@ -46,7 +45,6 @@
     padding: 0 10px;
     border: 1px solid #000;
 }
-
 .keyboard__keys._caps{
     text-transform: capitalize;
     #CAPS{
@@ -73,6 +71,7 @@
 }
 .onshift{
     display: block;
+    font-size: 30px;
     position: absolute;
     opacity: 0.1;
     top: 20px;
@@ -103,17 +102,15 @@
     text-align: center;
     padding: 30px 0 0 0;
 }
-
 /*--
 #yo, #one, #two, #three, #four, #five, #six, #seven, #eigth, #nine, #zero, #def, #plus {
     color: aquamarine;
 }
 -*/
-
 #TAB, #CTRL-L, #ENTER, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R {
-    opacity: 0.7;
+    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.596);
 }
-
 .keyboard__keys *:not(#TAB, #CTRL-L, #ENTER, #WIN, #ALT-L, #ALT-R, #FN, #CMD, #CTRL-R):hover{
     background: rgba( 0, 0, 0, 0.65);
     cursor: pointer;
